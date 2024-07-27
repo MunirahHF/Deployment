@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Real Estate Price Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Real Estate Price Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="X2 house age">House Age:</label>
+            <input type="text" id="X2 house age" name="X2 house age" required><br>
+
+            <label for="X3 distance to the nearest MRT station">Distance to MRT:</label>
+            <input type="text" id="X3 distance to the nearest MRT station" name="X3 distance to the nearest MRT station" required><br>
+
+            <label for="X4 number of convenience stores">Number of Convenience Stores:</label>
+            <input type="text" id="X4 number of convenience stores" name="X4 number of convenience stores" required><br>
+
+            <label for="X5 latitude">Latitude:</label>
+            <input type="text" id="X5 latitude" name="X5 latitude" required><br>
+
+            <label for="X6 longitude">Longitude:</label>
+            <input type="text" id="X6 longitude" name="X6 longitude" required><br>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
